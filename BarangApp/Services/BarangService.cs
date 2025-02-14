@@ -29,6 +29,7 @@ namespace BarangApp.BarangServices
             if (!string.IsNullOrEmpty(token))
             {
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                request.Headers.Add("accessToken", token);
                 Console.WriteLine($"✅ Token ditambahkan ke Header: {token}");
             }
             else
@@ -55,19 +56,13 @@ namespace BarangApp.BarangServices
         public async Task<List<Models.Barang>> GetBarangAsync()
         {
             var request = await CreateRequest(HttpMethod.Get, "barang"); 
-
-            // ✅ Logging sebelum mengirim request
             Console.WriteLine("📡 Mengirim GET Barang...");
-            Console.WriteLine($"📝 Headers dalam GET:");
             foreach (var header in request.Headers)
             {
                 Console.WriteLine($"   🔹 {header.Key}: {string.Join(", ", header.Value)}");
             }
-
             var response = await _http.SendAsync(request);
-
             Console.WriteLine($"📡 GET Barang - Status Code: {response.StatusCode}");
-
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<List<Models.Barang>>() ?? new List<Models.Barang>();
@@ -80,24 +75,31 @@ namespace BarangApp.BarangServices
             }
         }
 
-
-        public async Task<bool> CreateBarangAsync(Models.Barang barang)
+         public async Task<bool> CreateBarangAsync(Models.Barang barang)
         {
-            var token = await _localStorage.GetItemAsync<string>("accessToken");
-
             var requestBody = new
             {
                 Kode = barang.Kode,
                 Nama = barang.Nama,
                 Stok = barang.Stok,
-                Harga = barang.Harga,
-                accessToken = token
+                Harga = barang.Harga
             };
 
             var request = await CreateRequest(HttpMethod.Post, "barang", requestBody);
-            var response = await _http.SendAsync(request);
 
+            // Logging request
+            Console.WriteLine("📡 Mengirim POST Barang...");
+            Console.WriteLine($"📡 Body: {System.Text.Json.JsonSerializer.Serialize(requestBody)}");
+
+            var response = await _http.SendAsync(request);
             Console.WriteLine($"📡 POST Barang - Status Code: {response.StatusCode}");
+
+            // Tambahkan logging jika request gagal
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorMessage = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"❌ Gagal Create Barang: {response.StatusCode}, {errorMessage}");
+            }
 
             return response.IsSuccessStatusCode;
         }
@@ -106,32 +108,27 @@ namespace BarangApp.BarangServices
         {
             var request = await CreateRequest(HttpMethod.Put, "barang/update", barang);
             var response = await _http.SendAsync(request);
-
             Console.WriteLine($"📡 PUT Barang - Status Code: {response.StatusCode}");
-
             if (!response.IsSuccessStatusCode)
             {
                 var errorMessage = await response.Content.ReadAsStringAsync();
                 Console.WriteLine($"❌ Gagal Update Barang: {response.StatusCode}, {errorMessage}");
             }
-
             return response.IsSuccessStatusCode;
         }
 
         public async Task<bool> DeleteBarangAsync(int id)
         {
-            var request = await CreateRequest(HttpMethod.Delete, $"barang/delete?id={id}");
-            var response = await _http.SendAsync(request);
+            var token = await _localStorage.GetItemAsync<string>("authToken");
 
-            Console.WriteLine($"📡 DELETE Barang - Status Code: {response.StatusCode}");
+            var request = new HttpRequestMessage(HttpMethod.Delete, $"api/barang/{id}");
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-            if (!response.IsSuccessStatusCode)
-            {
-                var errorMessage = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"❌ Gagal Hapus Barang: {response.StatusCode}, {errorMessage}");
-            }
+            var response = await _httpClient.SendAsync(request);
 
             return response.IsSuccessStatusCode;
         }
+
+
     }
 }

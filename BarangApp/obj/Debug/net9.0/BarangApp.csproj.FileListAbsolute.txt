@@ -1116,10 +1116,10 @@ d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\98r36jh0mh-8bti36lthm.gz
 d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\8q95j9gn0l-tr0cyonrwt.gz
 d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\rzyc0uflhx-tsg4gsv2hg.gz
 d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\nvql8u1685-680lcgmlbm.gz
-d:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.luu87noggl.pdb
-d:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.yfpjh3zgwo.wasm
-d:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.luu87noggl.pdb.gz
-d:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.yfpjh3zgwo.wasm.gz
-d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\tqwfznz8n5-yfpjh3zgwo.gz
-d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\p4sqdhncyo-luu87noggl.gz
-d:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\zdkh400417-xo0mi51nhj.gz
+D:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\tqwfznz8n5-ppngixxuxv.gz
+D:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\p4sqdhncyo-86eve7zkac.gz
+D:\ProyekBarang\BarangApp\obj\Debug\net9.0\compressed\zdkh400417-wdjukduho1.gz
+D:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.86eve7zkac.pdb
+D:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.ppngixxuxv.wasm
+D:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.86eve7zkac.pdb.gz
+D:\ProyekBarang\BarangApp\bin\Debug\net9.0\wwwroot\_framework\BarangApp.ppngixxuxv.wasm.gz

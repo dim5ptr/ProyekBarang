@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\ProyekBarang\\BarangApp\\BarangApp.csproj": {}
+    "D:\\ProyekBarang\\BarangApp\\BarangApp.csproj": {}
   },
   "projects": {
-    "d:\\ProyekBarang\\BarangApp\\BarangApp.csproj": {
+    "D:\\ProyekBarang\\BarangApp\\BarangApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ProyekBarang\\BarangApp\\BarangApp.csproj",
+        "projectUniqueName": "D:\\ProyekBarang\\BarangApp\\BarangApp.csproj",
         "projectName": "BarangApp",
-        "projectPath": "d:\\ProyekBarang\\BarangApp\\BarangApp.csproj",
+        "projectPath": "D:\\ProyekBarang\\BarangApp\\BarangApp.csproj",
         "packagesPath": "C:\\Users\\THINKPAD\\.nuget\\packages\\",
-        "outputPath": "d:\\ProyekBarang\\BarangApp\\obj\\",
+        "outputPath": "D:\\ProyekBarang\\BarangApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\THINKPAD\\AppData\\Roaming\\NuGet\\NuGet.Config"

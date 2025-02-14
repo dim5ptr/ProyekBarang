@@ -5,6 +5,7 @@
 @inject BarangApp.AuthService.AuthService AuthService
 @namespace BarangApp.Pages
 @using BarangApp.Models
+@inject HttpClient Http
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.Authorization
 @attribute [Authorize]
@@ -95,6 +96,11 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        var token = await AuthService.GetAccessToken();
+        if (!string.IsNullOrEmpty(token))
+        {
+            Http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+        }
         await AuthService.AddAuthHeader();
         await LoadBarang();
     }
