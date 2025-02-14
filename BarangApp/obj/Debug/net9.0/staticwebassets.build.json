@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RH4U0mqa8ULViO7fx58WOfHEYKB/uVybfJV2eDtfB2M=",
+  "Hash": "teHBAPL0XmWQcFb4YEazVGgPpovhoGNpUILUG+IyCAg=",
   "Source": "BarangApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "qwiz6vfdmn",
-      "Integrity": "ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=",
+      "Fingerprint": "70kf43cfh0",
+      "Integrity": "+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\BarangApp.pdb"
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "uj73j7n4ni",
-      "Integrity": "+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=",
+      "Fingerprint": "5aiyg630ty",
+      "Integrity": "81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\webcil\\BarangApp.wasm"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "avp3i7mcfw",
-      "Integrity": "SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM=",
+      "Fingerprint": "tcotex1gxk",
+      "Integrity": "c91wTpsC1yDaSHPKXMJVn6hV1wnLVqyhxrPyArIZcBE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -8291,12 +8291,12 @@
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-qwiz6vfdmn.gz",
+      "Identity": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-70kf43cfh0.gz",
       "SourceId": "BarangApp",
       "SourceType": "Computed",
       "ContentRoot": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/BarangApp#[.{fingerprint=qwiz6vfdmn}]!.pdb.gz",
+      "RelativePath": "_framework/BarangApp#[.{fingerprint=70kf43cfh0}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8305,8 +8305,8 @@
       "RelatedAsset": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "r45ide60eu",
-      "Integrity": "e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=",
+      "Fingerprint": "3n9c3q8o3x",
+      "Integrity": "z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.pdb"
@@ -8984,12 +8984,12 @@
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Security.Cryptography.Algorithms.wasm"
     },
     {
-      "Identity": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-uj73j7n4ni.gz",
+      "Identity": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-5aiyg630ty.gz",
       "SourceId": "BarangApp",
       "SourceType": "Computed",
       "ContentRoot": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/BarangApp#[.{fingerprint=uj73j7n4ni}]!.wasm.gz",
+      "RelativePath": "_framework/BarangApp#[.{fingerprint=5aiyg630ty}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8998,8 +8998,8 @@
       "RelatedAsset": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "abgw7pn3cq",
-      "Integrity": "lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=",
+      "Fingerprint": "3p7jgcj2ac",
+      "Integrity": "tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.wasm"
@@ -9992,7 +9992,7 @@
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\zdkh400417-avp3i7mcfw.gz",
+      "Identity": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\zdkh400417-tcotex1gxk.gz",
       "SourceId": "BarangApp",
       "SourceType": "Computed",
       "ContentRoot": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\",
@@ -10006,8 +10006,8 @@
       "RelatedAsset": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "z55wuxwzwp",
-      "Integrity": "2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw=",
+      "Fingerprint": "b8yhph8mwg",
+      "Integrity": "dZvbk4avzsCOblUkUfL/dhFCXW/QvN81WpxCABv4kMw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -11244,305 +11244,7 @@
       ]
     },
     {
-      "Route": "_framework/BarangApp.pdb",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50452"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.pdb",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-qwiz6vfdmn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000027351549"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36560"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.pdb.gz",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-qwiz6vfdmn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36560"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.qwiz6vfdmn.pdb",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50452"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qwiz6vfdmn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/BarangApp.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.qwiz6vfdmn.pdb",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-qwiz6vfdmn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000027351549"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36560"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qwiz6vfdmn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/BarangApp.pdb"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.qwiz6vfdmn.pdb.gz",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-qwiz6vfdmn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36560"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qwiz6vfdmn"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/BarangApp.pdb.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.uj73j7n4ni.wasm",
+      "Route": "_framework/BarangApp.5aiyg630ty.wasm",
       "AssetFile": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11560,11 +11262,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
+          "Value": "\"81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
+          "Value": "Fri, 14 Feb 2025 08:46:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11574,7 +11276,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uj73j7n4ni"
+          "Value": "5aiyg630ty"
         },
         {
           "Name": "label",
@@ -11582,18 +11284,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
+          "Value": "sha256-81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI="
         }
       ]
     },
     {
-      "Route": "_framework/BarangApp.uj73j7n4ni.wasm",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-uj73j7n4ni.gz",
+      "Route": "_framework/BarangApp.5aiyg630ty.wasm",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-5aiyg630ty.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000027909573"
+          "Quality": "0.000027925161"
         }
       ],
       "ResponseHeaders": [
@@ -11603,15 +11305,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "35829"
+          "Value": "35809"
         },
         {
           "Name": "ETag",
-          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
+          "Value": "\"tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11631,13 +11333,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
+          "Value": "W/\"81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uj73j7n4ni"
+          "Value": "5aiyg630ty"
         },
         {
           "Name": "label",
@@ -11645,13 +11347,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
+          "Value": "sha256-81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI="
         }
       ]
     },
     {
-      "Route": "_framework/BarangApp.uj73j7n4ni.wasm.gz",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-uj73j7n4ni.gz",
+      "Route": "_framework/BarangApp.5aiyg630ty.wasm.gz",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-5aiyg630ty.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11660,7 +11362,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "35829"
+          "Value": "35809"
         },
         {
           "Name": "Content-Type",
@@ -11668,11 +11370,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
+          "Value": "\"tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11690,7 +11392,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uj73j7n4ni"
+          "Value": "5aiyg630ty"
         },
         {
           "Name": "label",
@@ -11698,7 +11400,305 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q="
+          "Value": "sha256-tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.70kf43cfh0.pdb",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70kf43cfh0"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/BarangApp.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.70kf43cfh0.pdb",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-70kf43cfh0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000027353794"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36557"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70kf43cfh0"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/BarangApp.pdb"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.70kf43cfh0.pdb.gz",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-70kf43cfh0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "70kf43cfh0"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/BarangApp.pdb.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.pdb",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\bin\\Debug\\net9.0\\wwwroot\\_framework\\BarangApp.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50448"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.pdb",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-70kf43cfh0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000027353794"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36557"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+fzC2POvvBe2Csc5OVld/6dYDabUUflVhVmikFqjkns="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.pdb.gz",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\p4sqdhncyo-70kf43cfh0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z8b/e4vEGqtrUjazq7eqkeqsuVaKioPXCwRe+hEAXv0="
         }
       ]
     },
@@ -11721,11 +11721,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
+          "Value": "\"81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
+          "Value": "Fri, 14 Feb 2025 08:46:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11735,18 +11735,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
+          "Value": "sha256-81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI="
         }
       ]
     },
     {
       "Route": "_framework/BarangApp.wasm",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-uj73j7n4ni.gz",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-5aiyg630ty.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000027909573"
+          "Quality": "0.000027925161"
         }
       ],
       "ResponseHeaders": [
@@ -11756,15 +11756,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "35829"
+          "Value": "35809"
         },
         {
           "Name": "ETag",
-          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
+          "Value": "\"tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11784,19 +11784,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
+          "Value": "W/\"81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
+          "Value": "sha256-81YrVU+JShiDFmjuPckIlvWvKhszuKNzdKEHEAAIgaI="
         }
       ]
     },
     {
       "Route": "_framework/BarangApp.wasm.gz",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-uj73j7n4ni.gz",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\tqwfznz8n5-5aiyg630ty.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11805,7 +11805,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "35829"
+          "Value": "35809"
         },
         {
           "Name": "Content-Type",
@@ -11813,11 +11813,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
+          "Value": "\"tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11835,7 +11835,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q="
+          "Value": "sha256-tx3c2nCPfKYabjh8jPtvtVvPkeLiTCUIDEO7vm7Yik0="
         }
       ]
     },
@@ -11858,7 +11858,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM=\""
+          "Value": "\"c91wTpsC1yDaSHPKXMJVn6hV1wnLVqyhxrPyArIZcBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 08:46:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c91wTpsC1yDaSHPKXMJVn6hV1wnLVqyhxrPyArIZcBE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\zdkh400417-tcotex1gxk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000077966630"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12825"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dZvbk4avzsCOblUkUfL/dhFCXW/QvN81WpxCABv4kMw=\""
         },
         {
           "Name": "Last-Modified",
@@ -11867,45 +11906,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\zdkh400417-avp3i7mcfw.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000077972710"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12824"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -11921,19 +11921,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM=\""
+          "Value": "W/\"c91wTpsC1yDaSHPKXMJVn6hV1wnLVqyhxrPyArIZcBE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM="
+          "Value": "sha256-c91wTpsC1yDaSHPKXMJVn6hV1wnLVqyhxrPyArIZcBE="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\zdkh400417-avp3i7mcfw.gz",
+      "AssetFile": "D:\\ProyekBarang\\BarangApp\\obj\\Debug\\net9.0\\compressed\\zdkh400417-tcotex1gxk.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11942,7 +11942,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12824"
+          "Value": "12825"
         },
         {
           "Name": "Content-Type",
@@ -11950,11 +11950,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw=\""
+          "Value": "\"dZvbk4avzsCOblUkUfL/dhFCXW/QvN81WpxCABv4kMw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+          "Value": "Fri, 14 Feb 2025 08:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11972,7 +11972,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw="
+          "Value": "sha256-dZvbk4avzsCOblUkUfL/dhFCXW/QvN81WpxCABv4kMw="
         }
       ]
     },
