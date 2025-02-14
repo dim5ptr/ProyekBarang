@@ -49,7 +49,7 @@ else
                         <td>@barang.Nama</td>
                         <td>@barang.Kode</td>
                         <td>@barang.Stok</td>
-                        <td>@barang.Harga.ToString("C")</td>
+                        <td>@barang.Harga.ToString("C", new System.Globalization.CultureInfo("id-ID"))</td>
                         <td>
                             <button class="edit-button" @onclick="() => EditBarang(barang)">Edit</button>
                             <button class="delete-button" @onclick="() => DeleteBarang(barang.Id)">Hapus</button>

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "BarangApp",
   "resources": {
-    "hash": "sha256-U6+WY14Ru2D3ctEfWVebScHTJz+esWj7tcYHMHAExsE=",
+    "hash": "sha256-a451HKmMUXYEzJ8ovjk00H3GOPGnK8Qog+HTUgph0IQ=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "Microsoft.AspNetCore.Authorization.esv38zo127.wasm": "Microsoft.AspNetCore.Authorization.wasm",
@@ -209,8 +209,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "BarangApp.ppngixxuxv.wasm": "BarangApp.wasm",
-      "BarangApp.86eve7zkac.pdb": "BarangApp.pdb"
+      "BarangApp.uj73j7n4ni.wasm": "BarangApp.wasm",
+      "BarangApp.qwiz6vfdmn.pdb": "BarangApp.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -428,10 +428,10 @@
       "WindowsBase.ovqw333kan.wasm": "sha256-7LCr4nX9JSGuwzMr8Rk8TGvC6ApzQNxCDiMV/0I9JlI=",
       "mscorlib.l6md3pggqy.wasm": "sha256-jZgH0LixLeQKqaq33akQgDGhfE7vbXbHtvCId5HC0Yo=",
       "netstandard.lij9csiyuf.wasm": "sha256-DeeBl9s8G34N3IfYRQ+MoY807amodj8cvpuvUSNaWE4=",
-      "BarangApp.ppngixxuxv.wasm": "sha256-DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc="
+      "BarangApp.uj73j7n4ni.wasm": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
     },
     "pdb": {
-      "BarangApp.86eve7zkac.pdb": "sha256-gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac="
+      "BarangApp.qwiz6vfdmn.pdb": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
     }
   },
   "cacheBootResources": true,

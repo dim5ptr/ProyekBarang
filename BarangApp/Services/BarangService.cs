@@ -11,6 +11,7 @@ namespace BarangApp.BarangServices
     public class BarangService
     {
         private readonly HttpClient _http;
+        
         private readonly ILocalStorageService _localStorage;
 
         public BarangService(HttpClient http, ILocalStorageService localStorage)
@@ -121,10 +122,10 @@ namespace BarangApp.BarangServices
         {
             var token = await _localStorage.GetItemAsync<string>("authToken");
 
-            var request = new HttpRequestMessage(HttpMethod.Delete, $"api/barang/{id}");
+            var request = new HttpRequestMessage(HttpMethod.Delete, $"api/barang/delete");
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-            var response = await _httpClient.SendAsync(request);
+            var response = await _http.SendAsync(request);
 
             return response.IsSuccessStatusCode;
         }

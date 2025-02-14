@@ -438,8 +438,8 @@
       ]
     },
     {
-      "Route": "_framework/BarangApp.86eve7zkac.pdb",
-      "AssetFile": "_framework/BarangApp.86eve7zkac.pdb",
+      "Route": "_framework/BarangApp.pdb",
+      "AssetFile": "_framework/BarangApp.qwiz6vfdmn.pdb",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -448,11 +448,11 @@
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Length",
-          "Value": "50580"
+          "Value": "50452"
         },
         {
           "Name": "Content-Type",
@@ -460,36 +460,173 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac=\""
+          "Value": "\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:45 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "86eve7zkac"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/BarangApp.pdb"
+          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
         }
       ]
     },
     {
-      "Route": "_framework/BarangApp.86eve7zkac.pdb",
-      "AssetFile": "_framework/BarangApp.86eve7zkac.pdb.gz",
+      "Route": "_framework/BarangApp.pdb",
+      "AssetFile": "_framework/BarangApp.qwiz6vfdmn.pdb.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000027326137"
+          "Quality": "0.000027351549"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.pdb.gz",
+      "AssetFile": "_framework/BarangApp.qwiz6vfdmn.pdb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36560"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.qwiz6vfdmn.pdb",
+      "AssetFile": "_framework/BarangApp.qwiz6vfdmn.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qwiz6vfdmn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/BarangApp.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BarangApp.qwiz6vfdmn.pdb",
+      "AssetFile": "_framework/BarangApp.qwiz6vfdmn.pdb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000027351549"
         }
       ],
       "ResponseHeaders": [
@@ -507,7 +644,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36594"
+          "Value": "36560"
         },
         {
           "Name": "Content-Type",
@@ -515,15 +652,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HjRtZXicfgfFuPraRzm2QqezTermcYPSWgNpk64EtF4=\""
+          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac=\""
+          "Value": "W/\"ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Vary",
@@ -533,11 +670,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "86eve7zkac"
+          "Value": "qwiz6vfdmn"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac="
+          "Value": "sha256-ehyaOQyUS3wp7k70vCCxi9q+lQFepVQhKx0neugOH/c="
         },
         {
           "Name": "label",
@@ -546,8 +683,8 @@
       ]
     },
     {
-      "Route": "_framework/BarangApp.86eve7zkac.pdb.gz",
-      "AssetFile": "_framework/BarangApp.86eve7zkac.pdb.gz",
+      "Route": "_framework/BarangApp.qwiz6vfdmn.pdb.gz",
+      "AssetFile": "_framework/BarangApp.qwiz6vfdmn.pdb.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -564,7 +701,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36594"
+          "Value": "36560"
         },
         {
           "Name": "Content-Type",
@@ -572,11 +709,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HjRtZXicfgfFuPraRzm2QqezTermcYPSWgNpk64EtF4=\""
+          "Value": "\"e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Vary",
@@ -586,11 +723,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "86eve7zkac"
+          "Value": "qwiz6vfdmn"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HjRtZXicfgfFuPraRzm2QqezTermcYPSWgNpk64EtF4="
+          "Value": "sha256-e28P2wtuGpUQZ04Sjy6iQMPM7kQ3kEkWRd6sjbaUW0Q="
         },
         {
           "Name": "label",
@@ -599,145 +736,8 @@
       ]
     },
     {
-      "Route": "_framework/BarangApp.pdb",
-      "AssetFile": "_framework/BarangApp.86eve7zkac.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "50580"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:45 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.pdb",
-      "AssetFile": "_framework/BarangApp.86eve7zkac.pdb.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000027326137"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36594"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HjRtZXicfgfFuPraRzm2QqezTermcYPSWgNpk64EtF4=\""
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gNPNJUjDb7Qn2OCbtLZ9YdwbeJlN3g9wFRSFTgWDnac="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.pdb.gz",
-      "AssetFile": "_framework/BarangApp.86eve7zkac.pdb.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "36594"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HjRtZXicfgfFuPraRzm2QqezTermcYPSWgNpk64EtF4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-HjRtZXicfgfFuPraRzm2QqezTermcYPSWgNpk64EtF4="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/BarangApp.ppngixxuxv.wasm",
-      "AssetFile": "_framework/BarangApp.ppngixxuxv.wasm",
+      "Route": "_framework/BarangApp.uj73j7n4ni.wasm",
+      "AssetFile": "_framework/BarangApp.uj73j7n4ni.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -750,7 +750,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "104725"
+          "Value": "104213"
         },
         {
           "Name": "Content-Type",
@@ -758,21 +758,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc=\""
+          "Value": "\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:46 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ppngixxuxv"
+          "Value": "uj73j7n4ni"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc="
+          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
         },
         {
           "Name": "label",
@@ -781,13 +781,13 @@
       ]
     },
     {
-      "Route": "_framework/BarangApp.ppngixxuxv.wasm",
-      "AssetFile": "_framework/BarangApp.ppngixxuxv.wasm.gz",
+      "Route": "_framework/BarangApp.uj73j7n4ni.wasm",
+      "AssetFile": "_framework/BarangApp.uj73j7n4ni.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000027738482"
+          "Quality": "0.000027909573"
         }
       ],
       "ResponseHeaders": [
@@ -805,7 +805,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36050"
+          "Value": "35829"
         },
         {
           "Name": "Content-Type",
@@ -813,15 +813,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wcCevdufyBBdVK6Z63Fsoy7fuhTU5K32YjbHKktyXfA=\""
+          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc=\""
+          "Value": "W/\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Vary",
@@ -831,11 +831,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ppngixxuxv"
+          "Value": "uj73j7n4ni"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc="
+          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
         },
         {
           "Name": "label",
@@ -844,8 +844,8 @@
       ]
     },
     {
-      "Route": "_framework/BarangApp.ppngixxuxv.wasm.gz",
-      "AssetFile": "_framework/BarangApp.ppngixxuxv.wasm.gz",
+      "Route": "_framework/BarangApp.uj73j7n4ni.wasm.gz",
+      "AssetFile": "_framework/BarangApp.uj73j7n4ni.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -862,7 +862,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36050"
+          "Value": "35829"
         },
         {
           "Name": "Content-Type",
@@ -870,11 +870,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wcCevdufyBBdVK6Z63Fsoy7fuhTU5K32YjbHKktyXfA=\""
+          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Vary",
@@ -884,11 +884,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ppngixxuxv"
+          "Value": "uj73j7n4ni"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wcCevdufyBBdVK6Z63Fsoy7fuhTU5K32YjbHKktyXfA="
+          "Value": "sha256-lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q="
         },
         {
           "Name": "label",
@@ -898,7 +898,7 @@
     },
     {
       "Route": "_framework/BarangApp.wasm",
-      "AssetFile": "_framework/BarangApp.ppngixxuxv.wasm",
+      "AssetFile": "_framework/BarangApp.uj73j7n4ni.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -911,7 +911,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "104725"
+          "Value": "104213"
         },
         {
           "Name": "Content-Type",
@@ -919,28 +919,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc=\""
+          "Value": "\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:46 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc="
+          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
         }
       ]
     },
     {
       "Route": "_framework/BarangApp.wasm",
-      "AssetFile": "_framework/BarangApp.ppngixxuxv.wasm.gz",
+      "AssetFile": "_framework/BarangApp.uj73j7n4ni.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000027738482"
+          "Quality": "0.000027909573"
         }
       ],
       "ResponseHeaders": [
@@ -958,7 +958,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36050"
+          "Value": "35829"
         },
         {
           "Name": "Content-Type",
@@ -966,15 +966,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wcCevdufyBBdVK6Z63Fsoy7fuhTU5K32YjbHKktyXfA=\""
+          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc=\""
+          "Value": "W/\"+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Vary",
@@ -984,13 +984,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DeIxvA20ONpIY6Q8f51b1YU6FeHC7vRXQG4PKJL+6Yc="
+          "Value": "sha256-+icGfR67DfVuEZdSKoMnKu/xttm3QuxdK4SWm2ZE9tE="
         }
       ]
     },
     {
       "Route": "_framework/BarangApp.wasm.gz",
-      "AssetFile": "_framework/BarangApp.ppngixxuxv.wasm.gz",
+      "AssetFile": "_framework/BarangApp.uj73j7n4ni.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1007,7 +1007,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "36050"
+          "Value": "35829"
         },
         {
           "Name": "Content-Type",
@@ -1015,11 +1015,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wcCevdufyBBdVK6Z63Fsoy7fuhTU5K32YjbHKktyXfA=\""
+          "Value": "\"lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:27:47 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Vary",
@@ -1029,7 +1029,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wcCevdufyBBdVK6Z63Fsoy7fuhTU5K32YjbHKktyXfA="
+          "Value": "sha256-lrXdpoJIWOUMZsFzpNwgiauKlpjaqIGDvjtQi1RZz3Q="
         }
       ]
     },
@@ -59762,17 +59762,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XDp9gZrHO7+Kh8CiMBmy5UW2xP4CIIGwDzOJyb3QBuI=\""
+          "Value": "\"SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:28:34 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XDp9gZrHO7+Kh8CiMBmy5UW2xP4CIIGwDzOJyb3QBuI="
+          "Value": "sha256-SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM="
         }
       ]
     },
@@ -59783,7 +59783,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000078003120"
+          "Quality": "0.000077972710"
         }
       ],
       "ResponseHeaders": [
@@ -59801,7 +59801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12819"
+          "Value": "12824"
         },
         {
           "Name": "Content-Type",
@@ -59809,15 +59809,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X9ttS1FWS1riCiaqI/VgxGaUSufULfDyCmddULC/Tfk=\""
+          "Value": "\"2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw=\""
         },
         {
           "Name": "ETag",
-          "Value": "W/\"XDp9gZrHO7+Kh8CiMBmy5UW2xP4CIIGwDzOJyb3QBuI=\""
+          "Value": "W/\"SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:19:58 GMT"
+          "Value": "Fri, 14 Feb 2025 07:47:01 GMT"
         },
         {
           "Name": "Vary",
@@ -59827,7 +59827,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XDp9gZrHO7+Kh8CiMBmy5UW2xP4CIIGwDzOJyb3QBuI="
+          "Value": "sha256-SizgegxVchTNCZ6HOdGR4bQkqu2oEQtgZpXSaPfdIkM="
         }
       ]
     },
@@ -59850,7 +59850,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12819"
+          "Value": "12824"
         },
         {
           "Name": "Content-Type",
@@ -59858,11 +59858,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X9ttS1FWS1riCiaqI/VgxGaUSufULfDyCmddULC/Tfk=\""
+          "Value": "\"2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:19:58 GMT"
+          "Value": "Fri, 14 Feb 2025 07:47:01 GMT"
         },
         {
           "Name": "Vary",
@@ -59872,7 +59872,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X9ttS1FWS1riCiaqI/VgxGaUSufULfDyCmddULC/Tfk="
+          "Value": "sha256-2VugYjZRO3CQLBo3fKL9cp8dMSgNm4da4ZHbZvky1fw="
         }
       ]
     },
