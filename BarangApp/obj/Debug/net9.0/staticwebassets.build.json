@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3d5WoH+3/apYH0eVl6iS2RLsjEpfVfo9LV23uiQ37NI=",
+  "Hash": "RH4U0mqa8ULViO7fx58WOfHEYKB/uVybfJV2eDtfB2M=",
   "Source": "BarangApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -11862,7 +11862,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
+          "Value": "Fri, 14 Feb 2025 08:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11901,7 +11901,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:47:01 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11954,7 +11954,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 07:47:01 GMT"
+          "Value": "Fri, 14 Feb 2025 07:50:25 GMT"
         },
         {
           "Name": "Cache-Control",
