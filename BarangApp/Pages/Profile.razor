@@ -1,0 +1,228 @@
+@page "/profile"
+@using Newtonsoft.Json
+@using System.Text.Json
+@inject BarangApp.AuthService.AuthService AuthService
+
+
+<h3>Profil Pengguna</h3>
+
+@if (profile == null)
+{
+    <p>Profil tidak ditemukan di LocalStorage.</p>
+}
+else
+{
+    <div class="profile-container">
+        <p><strong>Username:</strong> @profile.Username</p>
+        <p><strong>Email:</strong> @profile.Email</p>
+        <p><strong>Nama Lengkap:</strong> @profile.FullName</p>
+        <p><strong>No. Telepon:</strong> @profile.PhoneNumber</p>
+        <p><strong>Alamat:</strong> @profile.Address</p>
+
+        <button class="edit-button" @onclick="ShowEditModal">Edit Profil</button>
+    </div>
+}
+
+@if (isModalOpen)
+{
+    <div class="modal">
+        <div class="modal-content">
+            <h3>Edit Profil</h3>
+            <label>Username:</label>
+            <input @bind="editProfile.Username" class="form-control" />
+
+            <label>Email:</label>
+            <input @bind="editProfile.Email" type="email" class="form-control" />
+
+            <label>Nama Lengkap:</label>
+            <input @bind="editProfile.FullName" class="form-control" />
+
+            <label>No. Telepon:</label>
+            <input @bind="editProfile.PhoneNumber" class="form-control" />
+
+            <label>Alamat:</label>
+            <input @bind="editProfile.Address" class="form-control" />
+
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <p class="error-message">@errorMessage</p>
+            }
+
+            <div class="modal-buttons">
+                <button class="save-button" @onclick="UpdateProfile">Simpan</button>
+                <button class="cancel-button" @onclick="CloseModal">Batal</button>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    .profile-container {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+
+    .edit-button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .edit-button:hover {
+        background-color: #0056b3;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .modal-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .save-button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .save-button:hover {
+        background-color: #0056b3;
+    }
+
+    .cancel-button {
+        padding: 10px;
+        background-color: #6c757d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .cancel-button:hover {
+        background-color: #5a6268;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+</style>
+
+@code {
+    private UserProfile? profile;
+    private UserProfile editProfile = new();
+    private bool isModalOpen = false;
+    private string errorMessage = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await AuthService.AddAuthHeader();
+        profile = new UserProfile
+        {
+            Id = Convert.ToInt32(await AuthService.GetProfileData("id") ?? "0"),  // Tambahkan ID
+            Username = await AuthService.GetProfileData("username") ?? "",
+            Email = await AuthService.GetProfileData("email") ?? "",
+            FullName = await AuthService.GetProfileData("fullName") ?? "",
+            PhoneNumber = await AuthService.GetProfileData("phoneNumber") ?? "",
+            Address = await AuthService.GetProfileData("address") ?? ""
+        };
+
+        if (profile.Id == 0 || string.IsNullOrWhiteSpace(profile.Username) || string.IsNullOrWhiteSpace(profile.Email))
+        {
+            profile = null;
+            Console.WriteLine("⚠️ Tidak ada data profil di LocalStorage!");
+        }
+    }
+
+    private void ShowEditModal()
+    {
+        if (profile != null)
+        {
+            editProfile = new UserProfile
+            {
+                Id = profile.Id, // Tambahkan ID
+                Username = profile.Username,
+                Email = profile.Email,
+                FullName = profile.FullName,
+                PhoneNumber = profile.PhoneNumber,
+                Address = profile.Address
+            };
+        }
+        isModalOpen = true;
+    }
+
+    private async Task UpdateProfile()
+    {
+        errorMessage = "";
+
+        // Cek apakah ada perubahan data
+        if (System.Text.Json.JsonSerializer.Serialize(editProfile) == System.Text.Json.JsonSerializer.Serialize(profile))
+        {
+            errorMessage = "Tidak ada perubahan pada profil.";
+            return;
+        }
+
+        bool success = await AuthService.UpdateProfile(editProfile);
+        if (success)
+        {
+            profile = new UserProfile
+            {
+                Id = editProfile.Id, // Tambahkan ID
+                Username = editProfile.Username,
+                Email = editProfile.Email,
+                FullName = editProfile.FullName,
+                PhoneNumber = editProfile.PhoneNumber,
+                Address = editProfile.Address
+            };
+            CloseModal();
+        }
+        else
+        {
+            errorMessage = "Gagal memperbarui profil!";
+        }
+    }
+
+    private void CloseModal()
+    {
+        isModalOpen = false;
+        errorMessage = "";
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PbF3yNETmDk3LPekBh8LMIVuweKoiJ2SSWoPPiBNsXk=",
+  "Source": "BarangAPI",
+  "BasePath": "_content/BarangAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,136 @@
+﻿@page "/register"
+@using BarangApp.Service
+@inject BarangApp.Service.ApiService ApiService
+@inject NavigationManager Navigation
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@attribute [Authorize]
+<LayoutView Layout="null">
+    <div class="register-container">
+        <h3 class="title">Register</h3>
+
+        <div class="form-group">
+            <input @bind="user.Username" class="form-control" placeholder="Username" />
+        </div>
+
+        <div class="form-group">
+            <input @bind="user.Email" class="form-control" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+            <input @bind="user.Password" type="password" class="form-control" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+            <input @bind="user.ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password" />
+            @if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <p class="error-message">@errorMessage</p>
+            }
+        </div>
+
+        <button class="register-button" @onclick="HandleRegister">Register</button>
+        <p>Sudah punya akun? <a href="/">Login di sini</a></p>
+    </div>
+</LayoutView>
+
+<style>
+    .register-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f0f8ff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .title {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-control:focus {
+        border-color: #007bff;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .register-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .register-button:hover {
+        background-color: #0056b3;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+</style>
+
+@code {
+    private User user = new User();  // 🔹 Pastikan objek user terinisialisasi
+    private string errorMessage = "";
+
+    private async Task HandleRegister()
+    {
+        if (string.IsNullOrWhiteSpace(user.Username) ||
+            string.IsNullOrWhiteSpace(user.Email) ||
+            string.IsNullOrWhiteSpace(user.Password) ||
+            string.IsNullOrWhiteSpace(user.ConfirmPassword))
+        {
+            errorMessage = "Semua kolom wajib diisi!";
+            StateHasChanged();  // 🔹 Pastikan Blazor merender ulang
+            return;
+        }
+
+        if (user.Password != user.ConfirmPassword)
+        {
+            errorMessage = "Password dan Konfirmasi Password harus sama!";
+            StateHasChanged();
+            return;
+        }
+
+        var response = await ApiService.PostAsync("auth/register", user);
+        if (response.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/");
+        }
+        else
+        {
+            errorMessage = "Registrasi gagal. Silakan coba lagi.";
+        }
+
+        StateHasChanged();  // 🔹 Pastikan perubahan UI diperbarui
+    }
+
+    private class User
+    {
+        public string Username { get; set; } = "";  // 🔹 Default value untuk menghindari null
+        public string Email { get; set; } = "";
+        public string Password { get; set; } = "";
+        public string ConfirmPassword { get; set; } = "";
+    }
+}

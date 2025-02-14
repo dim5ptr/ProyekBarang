@@ -1,0 +1,139 @@
+﻿@page "/"
+@using BarangApp.Service
+@inject BarangApp.Service.ApiService ApiService
+@inject NavigationManager Navigation
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+
+<LayoutView Layout="null">
+<EditForm Model="user" OnValidSubmit="HandleLogin">
+    <div class="login-container">
+        <h3 class="title">Login</h3>
+        <div class="form-group">
+            <InputText @bind-Value="user.Email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="form-group">
+            <InputText @bind-Value="user.Password" type="password" class="form-control" placeholder="Password" />
+        </div>
+        <button class="login-button" type="submit">Login</button>
+        <p>Belum punya akun? <a href="/register">Daftar di sini</a></p>
+    </div>
+</EditForm>
+
+</LayoutView>
+<style>
+    .login-container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f0f8ff; /* Light blue background */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .title {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-control:focus {
+        border-color: #007bff; /* Blue focus */
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .login-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .login-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+@code {
+    private User user = new User();
+
+    private async Task HandleLogin()
+    {
+        var response = await ApiService.PostAsync("auth/login", user);
+        
+        if (!response.IsSuccessStatusCode)
+        {
+            Console.WriteLine("❌ Login gagal!");
+            return;
+        }
+
+        var result = await response.Content.ReadFromJsonAsync<AuthResponse>();
+
+        if (result?.AccessToken != null)
+        {
+            Console.WriteLine("✅ Login berhasil! Menyimpan data...");
+
+            // Simpan data ke LocalStorage
+            await LocalStorage.SetItemAsync("id", result.Id);  // Menyimpan ID
+            await LocalStorage.SetItemAsync("accessToken", result.AccessToken);
+            await LocalStorage.SetItemAsync("username", result.Username);
+            await LocalStorage.SetItemAsync("email", result.Email);
+            await LocalStorage.SetItemAsync("fullName", result.FullName);
+            await LocalStorage.SetItemAsync("phoneNumber", result.PhoneNumber);
+            await LocalStorage.SetItemAsync("address", result.Address);
+
+            await Task.Delay(500); // Tunggu agar penyimpanan selesai
+
+            // Debugging: Cek apakah data tersimpan dengan benar
+            var storedId = await LocalStorage.GetItemAsync<int>("id");
+            var storedToken = await LocalStorage.GetItemAsync<string>("accessToken");
+            var storedUsername = await LocalStorage.GetItemAsync<string>("username");
+
+            if (storedId != 0 && !string.IsNullOrEmpty(storedToken) && !string.IsNullOrEmpty(storedUsername))
+            {
+                Console.WriteLine($"✅ ID tersimpan: {storedId}");
+                Console.WriteLine($"✅ Token tersimpan: {storedToken}");
+                Console.WriteLine($"✅ Username tersimpan: {storedUsername}");
+
+                // Pindah ke dashboard setelah memastikan data tersimpan
+                Navigation.NavigateTo("/dashboard");
+            }
+            else
+            {
+                Console.WriteLine("❌ ID, token, atau username gagal disimpan, tidak mengarahkan ke dashboard!");
+            }
+        }
+        else
+        {
+            Console.WriteLine("❌ Gagal mendapatkan accessToken dari server.");
+        }
+    }
+
+    private class AuthResponse
+    {
+        public int Id { get; set; }
+        public string AccessToken { get; set; } = string.Empty;
+        public string Username { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string FullName { get; set; } = string.Empty;
+        public string PhoneNumber { get; set; } = string.Empty;
+        public string Address { get; set; } = string.Empty;
+    }
+
+}

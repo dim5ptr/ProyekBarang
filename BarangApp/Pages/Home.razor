@@ -1,0 +1,73 @@
+﻿@page "/dashboard"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@inject BarangApp.AuthService.AuthService AuthService
+
+@attribute [Authorize]
+
+<div class="dashboard-container">
+    <h3 class="title">Welcome to the Dashboard</h3>
+
+    <AuthorizeView>
+        <Authorized>
+            <p class="message success">Welcome, you are logged in!</p>
+        </Authorized>
+        <NotAuthorized>
+            <p class="message error">You are not authorized to view this page.</p>
+        </NotAuthorized>
+    </AuthorizeView>
+</div>
+
+<style>
+    .dashboard-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f0f8ff; /* Light blue background */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .message {
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    .error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+</style>
+
+@code{
+    private string? username;
+    protected override async Task OnInitializedAsync()
+    {
+        await AuthService.AddAuthHeader();
+        username = await AuthService.GetProfileData("username");
+        if (username != null)
+        {
+            Console.WriteLine($"✅ Profil ditemukan di Home: {username}");
+        }
+        else
+        {
+            Console.WriteLine("❌ Tidak ada data profil di Home!");
+        }
+    }
+
+}

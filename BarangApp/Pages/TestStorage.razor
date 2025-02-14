@@ -1,0 +1,40 @@
+@page "/test-storage"
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+
+<h3>🔍 Test Penyimpanan LocalStorage</h3>
+
+<button @onclick="TestSaveData">✅ Simpan Data</button>
+<button @onclick="TestRetrieveData">🔍 Cek Data</button>
+<button @onclick="TestClearData">❌ Hapus Data</button>
+
+<p>@message</p>
+
+@code {
+    private string message = "";
+
+    private async Task TestSaveData()
+    {
+        await LocalStorage.SetItemAsync("username", "testuser");
+        await LocalStorage.SetItemAsync("email", "test@example.com");
+        await LocalStorage.SetItemAsync("fullName", "John Doe");
+        message = "✅ Data tersimpan di LocalStorage!";
+        StateHasChanged();
+    }
+
+    private async Task TestRetrieveData()
+    {
+        var username = await LocalStorage.GetItemAsync<string>("username");
+        var email = await LocalStorage.GetItemAsync<string>("email");
+        var fullName = await LocalStorage.GetItemAsync<string>("fullName");
+
+        message = $"🔍 Username: {username ?? "Not Found"} | Email: {email ?? "Not Found"} | FullName: {fullName ?? "Not Found"}";
+        StateHasChanged();
+    }
+
+    private async Task TestClearData()
+    {
+        await LocalStorage.ClearAsync();
+        message = "❌ Semua data dihapus!";
+        StateHasChanged();
+    }
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BarangAPI.props" />
+</Project>

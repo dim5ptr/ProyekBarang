@@ -1,0 +1,315 @@
+@page "/barang-manajement"
+@inject ApiService ApiService
+@using BarangApp.BarangServices
+@inject BarangService BarangService
+@inject BarangApp.AuthService.AuthService AuthService
+@namespace BarangApp.Pages
+@using BarangApp.Models
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@attribute [Authorize]
+<h3>Daftar Barang</h3>
+
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <p class="error-message">@errorMessage</p>
+}
+
+<button class="add-button" @onclick="ShowCreateModal">Tambah Barang</button>
+
+@if (daftarBarang == null)
+{
+    <p class="loading-message">Memuat data...</p>
+}
+else if (daftarBarang.Count == 0)
+{
+    <p class="empty-message">Tidak ada data barang.</p>
+}
+else
+{
+    <table class="barang-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Kode</th>
+                <th>Stok</th>
+                <th>Harga</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var barang in daftarBarang)
+            {
+                if (barang != null)
+                {
+                    <tr>
+                        <td>@barang.Id</td>
+                        <td>@barang.Nama</td>
+                        <td>@barang.Kode</td>
+                        <td>@barang.Stok</td>
+                        <td>@barang.Harga.ToString("C")</td>
+                        <td>
+                            <button class="edit-button" @onclick="() => EditBarang(barang)">Edit</button>
+                            <button class="delete-button" @onclick="() => DeleteBarang(barang.Id)">Hapus</button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+}
+
+@if (isModalOpen)
+{
+    <div class="modal">
+        <div class="modal-content">
+            <h3>@(isEdit ? "Edit Barang" : "Tambah Barang")</h3>
+            <label>Nama Barang:</label>
+            <input @bind="barangBaru.Nama" required />
+
+            <label>Kode Barang:</label>
+            <input @bind="barangBaru.Kode" required />
+
+            <label>Stok:</label>
+            <input type="number" @bind="barangBaru.Stok" min="0" />
+
+            <label>Harga:</label>
+            <input type="number" @bind="barangBaru.Harga" min="0" step="0.01" />
+
+            <div class="modal-buttons">
+                <button class="action-button save" @onclick="SaveBarang">Simpan</button>
+                <button class="action-button cancel" @onclick="CloseModal">Batal</button>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    
+    private List<Barang>? daftarBarang;
+    private string? errorMessage;
+    private Barang barangBaru = new();
+    private bool isModalOpen = false;
+    private bool isEdit = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await AuthService.AddAuthHeader();
+        await LoadBarang();
+    }
+
+    private async Task LoadBarang()
+    {
+        try
+        {
+            daftarBarang = await BarangService.GetBarangAsync();
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Gagal memuat data: {ex.Message}";
+        }
+    }
+
+    private void ShowCreateModal()
+    {
+        barangBaru = new Barang();
+        isEdit = false;
+        isModalOpen = true;
+    }
+
+    private void EditBarang(Barang barang)
+    {
+        barangBaru = new Barang
+        {
+            Id = barang.Id,
+            Nama = barang.Nama,
+            Kode = barang.Kode,
+            Stok = barang.Stok,
+            Harga = barang.Harga
+        };
+        isEdit = true;
+        isModalOpen = true;
+    }
+
+    private async Task SaveBarang()
+    {
+        bool success;
+        if (isEdit)
+        {
+            success = await BarangService.UpdateBarangAsync(barangBaru);
+        }
+        else
+        {
+            success = await BarangService.CreateBarangAsync(barangBaru);
+        }
+
+        if (success)
+        {
+            await LoadBarang();
+            CloseModal();
+        }
+        else
+        {
+            errorMessage = "Gagal menyimpan data";
+        }
+    }
+
+    private async Task DeleteBarang(int id)
+    {
+        if (await BarangService.DeleteBarangAsync(id))
+        {
+            await LoadBarang();
+        }
+        else
+        {
+            errorMessage = "Gagal menghapus data";
+        }
+    }
+
+    private void CloseModal()
+    {
+        isModalOpen = false;
+    }
+}
+<style>
+    .title {
+        text-align: center;
+        color: #1e3a8a; /* Biru tua */
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .error-message {
+        color: #ef4444; /* Merah */
+        font-weight: bold;
+    }
+
+    .loading-message, .empty-message {
+        text-align: center;
+        color: #64748b; /* Abu-abu */
+        font-style: italic;
+    }
+
+    .add-button {
+        display: block;
+        margin: 10px auto 20px;
+        padding: 10px 20px;
+        background-color: #38bdf8; /* Biru muda */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    .add-button:hover {
+        background-color: #0284c7; /* Biru lebih tua */
+    }
+
+    .barang-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: #f9fafb; /* Putih kebiruan */
+        border: 1px solid #e5e7eb;
+    }
+
+    .barang-table th, .barang-table td {
+        border: 1px solid #e5e7eb;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .barang-table th {
+        background-color: #bfdbfe; /* Biru sangat muda */
+        color: #1e3a8a; /* Biru tua */
+    }
+
+    .edit-button, .delete-button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .edit-button {
+        background-color: #4ade80; /* Hijau */
+        color: white;
+    }
+
+    .edit-button:hover {
+        background-color: #16a34a; /* Hijau tua */
+    }
+
+    .delete-button {
+        background-color: #f87171; /* Merah muda */
+        color: white;
+    }
+
+    .delete-button:hover {
+        background-color: #dc2626; /* Merah tua */
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+    }
+
+    .save-button {
+        padding: 10px;
+        background-color: #3b82f6; /* Biru */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .save-button:hover {
+        background-color: #1d4ed8; /* Biru tua */
+    }
+
+    .cancel-button {
+        padding: 10px;
+        background-color: #6b7280; /* Abu-abu tua */
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .cancel-button:hover {
+        background-color: #374151; /* Abu-abu lebih tua */
+    }
+</style>
+
