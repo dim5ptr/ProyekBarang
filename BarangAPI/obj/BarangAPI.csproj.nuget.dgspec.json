@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ProyekBarang\\BarangApi\\BarangAPI.csproj": {}
+    "D:\\ProyekBarang\\BarangAPI\\BarangAPI.csproj": {}
   },
   "projects": {
-    "D:\\ProyekBarang\\BarangApi\\BarangAPI.csproj": {
+    "D:\\ProyekBarang\\BarangAPI\\BarangAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ProyekBarang\\BarangApi\\BarangAPI.csproj",
+        "projectUniqueName": "D:\\ProyekBarang\\BarangAPI\\BarangAPI.csproj",
         "projectName": "BarangAPI",
-        "projectPath": "D:\\ProyekBarang\\BarangApi\\BarangAPI.csproj",
+        "projectPath": "D:\\ProyekBarang\\BarangAPI\\BarangAPI.csproj",
         "packagesPath": "C:\\Users\\THINKPAD\\.nuget\\packages\\",
-        "outputPath": "D:\\ProyekBarang\\BarangApi\\obj\\",
+        "outputPath": "D:\\ProyekBarang\\BarangAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\THINKPAD\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -20,6 +20,7 @@
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

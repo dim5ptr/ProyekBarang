@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarangAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fe098973d173c3118d1dfaf0fcaf46de0a77aa2")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarangAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarangAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
